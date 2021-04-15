@@ -1,0 +1,90 @@
+{
+	"groups": [
+		{
+			"keys": "stylebg1_i6_jpg,avatar1_png,avatar1_01_png,avatar1_03_png,avatar1_05_png,avatar1_04_png,avatar1_02_png,avatar1_06_png,boom_png,boom_json,xiao_mp3,down_mp3,baozhao_json,baozhao_png,dan_png,bao_wav",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/stylebg1_i6.jpg",
+			"type": "image",
+			"name": "stylebg1_i6_jpg"
+		},
+		{
+			"url": "assets/avatar1.png",
+			"type": "image",
+			"name": "avatar1_png"
+		},
+		{
+			"url": "assets/avatar1_01.png",
+			"type": "image",
+			"name": "avatar1_01_png"
+		},
+		{
+			"url": "assets/avatar1_03.png",
+			"type": "image",
+			"name": "avatar1_03_png"
+		},
+		{
+			"url": "assets/avatar1_05.png",
+			"type": "image",
+			"name": "avatar1_05_png"
+		},
+		{
+			"url": "assets/avatar1_04.png",
+			"type": "image",
+			"name": "avatar1_04_png"
+		},
+		{
+			"url": "assets/avatar1_02.png",
+			"type": "image",
+			"name": "avatar1_02_png"
+		},
+		{
+			"url": "assets/avatar1_06.png",
+			"type": "image",
+			"name": "avatar1_06_png"
+		},
+		{
+			"url": "assets/boom.png",
+			"type": "image",
+			"name": "boom_png"
+		},
+		{
+			"url": "assets/boom.json",
+			"type": "json",
+			"name": "boom_json"
+		},
+		{
+			"name": "xiao_mp3",
+			"type": "sound",
+			"url": "assets/xiao.mp3"
+		},
+		{
+			"name": "down_mp3",
+			"type": "sound",
+			"url": "assets/down.mp3"
+		},
+		{
+			"name": "baozhao_json",
+			"type": "json",
+			"url": "assets/baozhao.json"
+		},
+		{
+			"name": "baozhao_png",
+			"type": "image",
+			"url": "assets/baozhao.png"
+		},
+		{
+			"name": "dan_png",
+			"type": "image",
+			"url": "assets/dan.png"
+		},
+		{
+			"name": "bao_wav",
+			"type": "sound",
+			"url": "assets/bao.wav"
+		}
+	]
+}
