@@ -1,0 +1,34 @@
+{"mc":{
+	"boom":{
+		"frameRate":20,
+		"labels":[
+			{"name":"boomMoive","frame":1,"end":3}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"guang1",
+			"x":9,
+			"y":15
+			},
+			{
+			"res":"guang2",
+			"x":9,
+			"y":12
+			},
+			{
+			"res":"guang3",
+			"x":5,
+			"y":9
+			}
+			]
+}},
+	"res":{
+		"guang3":{"x":1,"y":1,"w":58,"h":57},
+		"guang1":{"x":61,"y":55,"w":47,"h":46},
+		"guang2":{"x":61,"y":1,"w":53,"h":52}
+	}}
