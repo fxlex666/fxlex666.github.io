@@ -1,0 +1,488 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta content="telephone=no" name="format-detection" />
+<meta content="email=no" name="format-detection" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="pragram" content="no-cache" />
+<title>买了</title>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+
+<style>
+	
+	
+	@-webkit-keyframes fontshake {
+			0%{
+				-webkit-transform: translateY(-25px) scaleY(1) scaleX(1);
+				transform: translateY(-25px) scaleY(1) scaleX(1);
+			}
+					
+		     20% {
+		        -webkit-transform: translateY(20px) scaleY(0.88) scaleX(1.05);
+		        transform: translateY(20px) scaleY(0.88) scaleX(1.05);
+		     }
+			  
+			  
+			 100%{
+				 -webkit-transform: translateY(-25px) scaleY(1) scaleX(1);
+				 transform: translateY(-25px) scaleY(1) scaleX(1);
+			 }
+	}
+	@keyframes fontshake {
+	
+		0%{
+			-webkit-transform: translateY(-25px) scaleY(1) scaleX(1);
+			transform: translateY(-25px) scaleY(1) scaleX(1);
+		}
+				
+		 20% {
+		    -webkit-transform: translateY(20px) scaleY(0.88) scaleX(1.05);
+		    transform: translateY(20px) scaleY(0.88) scaleX(1.05);
+		 }
+		 
+		 100%{
+			 -webkit-transform: translateY(-25px) scaleY(1) scaleX(1);
+			 transform: translateY(-25px) scaleY(1) scaleX(1);
+		 }
+	}
+	
+	
+	.fontshake {
+		-webkit-animation: fontshake 0.8s infinite;
+		animation: fontshake 0.8s infinite
+	}
+	
+	
+@-webkit-keyframes shake {
+		0%{
+			-webkit-transform: translateY(0px) scaleY(1) scaleX(1);
+			transform: translateY(0px) scaleY(1) scaleX(1);
+		}
+		
+		20% {
+		    -webkit-transform: translateY(-10px) scaleY(1.02) scaleX(1);
+		    transform: translateY(-10px) scaleY(1.02) scaleX(1);
+		}
+		40%{
+			-webkit-transform: translateY(0px) scaleY(1) scaleX(1.1);
+			transform: translateY(0px) scaleY(1) scaleX(1.1);
+		}
+		60%{
+			-webkit-transform: translateY(-10px) scaleY(1.02) scaleX(1);
+			transform: translateY(-10px) scaleY(1.02) scaleX(1);
+		}	
+				
+	     80% {
+	        -webkit-transform: translateY(0px) scaleY(1) scaleX(1.1);
+	        transform: translateY(0px) scaleY(1) scaleX(1.1);
+	     }
+		 
+		 100%{
+			 -webkit-transform: translateY(0px) scaleY(1) scaleX(1);
+			 transform: translateY(0px) scaleY(1) scaleX(1);
+		 }
+}
+
+@keyframes shake {
+
+	0%{
+		-webkit-transform: translateY(0px) scaleY(0.98) scaleX(1);
+		transform: translateY(0px) scaleY(0.98) scaleX(1);
+	}
+	
+	20% {
+	    -webkit-transform: translateY(-10px) scaleY(1.02) scaleX(1);
+	    transform: translateY(-10px) scaleY(1.02) scaleX(1);
+	}
+	40%{
+		-webkit-transform: translateY(0px) scaleY(0.98) scaleX(1.1);
+		transform: translateY(0px) scaleY(0.98) scaleX(1.1);
+	}
+	60%{
+		-webkit-transform: translateY(-10px) scaleY(1.02) scaleX(1);
+		transform: translateY(-10px) scaleY(1.02) scaleX(1);
+	}	
+			
+	 80% {
+	    -webkit-transform: translateY(0px) scaleY(0.98) scaleX(1.1);
+	    transform: translateY(0px) scaleY(0.98) scaleX(1.1);
+	 }
+	 
+	 100%{
+		 -webkit-transform: translateY(0px) scaleY(1) scaleX(1);
+		 transform: translateY(0px) scaleY(1) scaleX(1);
+	 }
+}
+
+.shake {
+	-webkit-animation: shake 0.8s 3;
+	animation: shake 0.8s 3
+}
+	
+.loading{display: flex;position: fixed;width:100%;height:100%;top:0;left:0;align-items: center;}
+.loading .logo{width:16%;margin-left:24%;position: relative;}
+.loading .logo img{width:100%}
+.loading .mai{width:70%;position: absolute;top:-2%;left:12%;transform:scale(0.1);}
+.loading .le{width:70%;position: absolute;top:-2%;left:12%;transform:scale(0.1);}
+.loading .ji{width:70%;position: absolute;top:-2%;left:12%;transform:scale(0.1);}
+.loading .fen{width:70%;position: absolute;top:-2%;left:12%;transform:scale(0.1);}
+.loading .loadtext{font-size: 18px;color:#333;text-align: center;position: absolute;top:58%;width:100%;}
+.fontrun{animation: fontrun 1s linear 1 forwards;
+ transform-origin: -10px -10px;
+}
+@-webkit-keyframes fontrun {
+    0% {
+        transform: rotate(0deg) ;
+		transform-origin: -10px -10px;
+    }
+    100% {
+        transform: rotate(-360deg);
+		 transform-origin: -50px -50px;
+    }
+}
+@keyframes fontrun {
+  0% {
+      transform: rotate(0deg) ;
+  	transform-origin: -10px -10px;
+  }
+  100% {
+      transform: rotate(-360deg);
+  	 transform-origin: -50px -50px;
+  }
+}
+.fontbig{animation: fontbig 1.8s 1 linear forwards;
+/* transition-timing-function: cubic-bezier(0, 0,  0.4, 0.4); */
+}
+@-webkit-keyframes fontbig {
+    0% {
+		left:12%;
+		top:-2%
+        transform: scale(0.1) ;
+    }
+    25% {
+        transform: scale(0.22);
+		left:20%;
+		top:10%
+    }
+	55%{
+		 transform: scale(0.28);
+		left:28%;
+		top:10%
+	}
+	65%{
+		top:-18%;
+		left:45%;
+	}
+	
+	94%{
+		transform: scale(0.7);
+		left:92%;
+		top:48%
+	}
+	
+	100%{
+		transform: scale(0.7);
+		left:92%;
+		top:40%
+	}
+}
+
+@keyframes fontbig {
+ 0% {
+ 	left:12%;
+ 	top:-2%
+     transform: scale(0.1) ;
+ }
+ 25% {
+     transform: scale(0.22);
+ 	left:20%;
+ 	top:10%
+ }
+ 55%{
+ 	 transform: scale(0.28);
+ 	left:28%;
+ 	top:10%
+ }
+ 
+ 65%{
+	top:-18%;
+	left:45%;
+ }
+ 
+ 94%{
+ 	transform: scale(0.7);
+ 	left:92%;
+ 	top:48%
+ }
+ 100%{
+ 	 transform: scale(0.7);
+ 	 left:92%;
+ 	 top:40%
+ }
+}
+
+
+
+
+.fontbigle{animation: fontbigle 1.8s 1 linear forwards;
+/* transition-timing-function: cubic-bezier(0, 0,  0.4, 0.4); */
+}
+@-webkit-keyframes fontbigle {
+    0% {
+		left:12%;
+		top:-2%
+        transform: scale(0.1) ;
+    }
+    25% {
+        transform: scale(0.22);
+		left:20%;
+		top:10%
+    }
+	55%{
+		 transform: scale(0.28);
+		left:28%;
+		top:10%
+	}
+	65%{
+		top:-20%;
+		left:60%;
+	}
+	
+	94%{
+		transform: scale(0.7);
+		left:150%;
+		top:48%
+	}
+	
+	100%{
+		transform: scale(0.7);
+		left:150%;
+		top:40%
+	}
+}
+
+@keyframes fontbigle {
+ 0% {
+ 	left:12%;
+ 	top:-2%
+     transform: scale(0.1) ;
+ }
+ 25% {
+     transform: scale(0.22);
+ 	left:20%;
+ 	top:10%
+ }
+ 55%{
+ 	 transform: scale(0.28);
+ 	left:28%;
+ 	top:10%
+ }
+ 
+ 65%{
+ 	top:-20%;
+ 	left:60%;
+ }
+ 94%{
+ 	transform: scale(0.7);
+ 	left:150%;
+ 	top:48%
+ }
+ 100%{
+ 	transform: scale(0.7);
+ 	left:150%;
+ 	top:40%
+ }
+}
+
+.fontbigji{animation: fontbigji 1.8s 1 linear forwards;
+/* transition-timing-function: cubic-bezier(0, 0,  0.4, 0.4); */
+}
+@-webkit-keyframes fontbigji {
+    0% {
+		left:12%;
+		top:-2%
+        transform: scale(0.1) ;
+    }
+    25% {
+        transform: scale(0.22);
+		left:20%;
+		top:10%
+    }
+	55%{
+		 transform: scale(0.28);
+		left:28%;
+		top:10%
+	}
+ 65%{
+ 	top:-20%;
+ 	left:87%;
+ }
+ 94%{
+ 	transform: scale(0.7);
+ 	left:206%;
+ 	top:48%
+ }
+ 100%{
+ 	transform: scale(0.7);
+ 	left:206%;
+ 	top:40%
+ }
+}
+
+@keyframes fontbigji {
+ 0% {
+ 	left:12%;
+ 	top:-2%
+     transform: scale(0.1) ;
+ }
+ 25% {
+     transform: scale(0.22);
+ 	left:20%;
+ 	top:10%
+ }
+ 55%{
+ 	 transform: scale(0.28);
+ 	left:28%;
+ 	top:10%
+ }
+ 
+ 65%{
+ 	top:-20%;
+ 	left:87%;
+ }
+ 94%{
+ 	transform: scale(0.7);
+ 	left:206%;
+ 	top:48%
+ }
+ 100%{
+ 	transform: scale(0.7);
+ 	left:206%;
+ 	top:40%
+ }
+}
+
+.fontbigfen{animation: fontbigfen 1.8s 1 linear forwards;
+/* transition-timing-function: cubic-bezier(0, 0,  0.4, 0.4); */
+}
+@-webkit-keyframes fontbigfen {
+    0% {
+		left:12%;
+		top:-2%
+        transform: scale(0.1) ;
+    }
+    25% {
+        transform: scale(0.22);
+		left:20%;
+		top:10%
+    }
+	55%{
+		 transform: scale(0.28);
+		left:28%;
+		top:10%
+	}
+ 65%{
+ 	top:-20%;
+ 	left:120%;
+ }
+ 
+ 94%{
+ 	transform: scale(0.7);
+ 	left:262%;
+ 	top:48%
+ } 
+ 100%{
+ 	transform: scale(0.7);
+ 	left:262%;
+ 	top:40%
+ }
+}
+
+@keyframes fontbigfen {
+ 0% {
+ 	left:12%;
+ 	top:-2%
+     transform: scale(0.1) ;
+ }
+ 25% {
+     transform: scale(0.22);
+ 	left:20%;
+ 	top:10%
+ }
+ 55%{
+ 	 transform: scale(0.28);
+ 	left:28%;
+ 	top:10%
+ }
+ 
+ 65%{
+ 	top:-20%;
+ 	left:120%;
+ }
+ 94%{
+ 	transform: scale(0.7);
+ 	left:262%;
+ 	top:48%
+ } 
+ 
+ 100%{
+ 	transform: scale(0.7);
+ 	left:262%;
+ 	top:40%
+ }
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+<div class='loading'>
+	<div class="logo">
+		<img class="shake" src="img/logo.png"/ >
+		
+		<div class="mai fontbig">
+			<div class="fontrun">
+				<img class="fontshake" style="animation-delay: 0s;" src="img/mai.png"/ >
+			</div>
+		</div>
+		<div class="le fontbigle" style="animation-delay: 0.4s;">
+			<div class="fontrun" style="animation-delay: 0.4s;">
+				<img class="fontshake" style="animation-delay: 0.1s;" src="img/le.png"/ >
+			</div>
+		</div>
+		
+		<div class="ji fontbigji" style="animation-delay: 0.8s;">
+			<div class="fontrun" style="animation-delay: 0.8s;">
+				<img class="fontshake" style="animation-delay: 0.2s;" src="img/ji.png"/ >
+			</div>
+		</div>
+		<div class="fen fontbigfen" style="animation-delay: 1.2s;">
+			<div class="fontrun" style="animation-delay: 1.2s;">
+				<img class="fontshake" style="animation-delay: 0.3s;" src="img/fen.png"/ >
+			</div>
+		</div>
+		
+		
+	</div>
+	<div class="loadtext">
+		loading...
+	</div>
+</div>
+
+</body>
+
+<script>
+
+
+</script>
+
+</html>
