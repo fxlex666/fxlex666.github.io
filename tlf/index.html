@@ -15,6 +15,7 @@
 <script src="js/jquery-3.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/singlePageNav.min.js"></script>
+
 <script>
 $(function(){
 /*导航跳转效果插件*/
@@ -131,18 +132,33 @@ $('.navbar-collapse').collapse('hide');
 	<h1 class="tit wow animate bounceIn animated" style="visibility: visible; animation-name: bounceIn;">案例展示</h1>
 	<p class="m wow animate bounceIn animated" style="visibility: visible; animation-name: bounceIn;">Case Presentation</p>
 	
-	<div class="row">
-		<div class="box2 col-xs-12 col-sm-6 col-md-4 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+	
+	<ul class="nav nav-pills nav-justified">
+	  <li role="presentation" class="active"><a href="#">H5小游戏</a></li>
+	  <li role="presentation"><a href="#">小程序</a></li>
+	  <li role="presentation"><a href="#">官网</a></li>
+	  <li role="presentation"><a href="#">logo设计</a></li>
+	  <li role="presentation"><a href="#">商城</a></li>
+	  <li role="presentation"><a href="#">海报作品</a></li>
+	  <li role="presentation"><a href="#">后台系统</a></li>
+	  
+	</ul>
+	
+	<div class="caseList row">
+		<!-- <div class="box2 col-xs-12 col-sm-6 col-md-4 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
 			<a target="_blank" href="http://jimiui.com/app.html" class="thumbnail">
-				<img src="image/a1.jpg" alt="APP设计">
-				<p class="mask">APP设计</p>
+				<img src="img/case1.png" alt="H5小游戏">
+				<p class="mask">H5小游戏</p>
 			</a>
+			<div class="casename">周生生幸运捉福娃</div>
 		</div>
+		
 		<div class="box2 col-xs-12 col-sm-6 col-md-4 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
 			<a target="_blank" href="http://jimiui.com/web.html" class="thumbnail">
 				<img src="image/a2.jpg" alt="WEB设计">
 				<p class="mask">网页设计</p>
 			</a>
+			<div class="casename">周生生幸运捉福娃</div>
 		</div>
 		<div class="box2 col-xs-12 col-sm-6 col-md-4 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
 			<a target="_blank" href="http://jimiui.com/pm.html" class="thumbnail">
@@ -191,7 +207,7 @@ $('.navbar-collapse').collapse('hide');
 				<img src="image/a9.jpg" alt="摄影">
 				<p class="mask">摄影作品</p>
 			</a>
-		</div>
+		</div> -->
 		
 	</div>	
 </div>
@@ -219,5 +235,5 @@ $('.navbar-collapse').collapse('hide');
 
 	
 
-
+<script src="js/main.js"></script>
 </body></html>

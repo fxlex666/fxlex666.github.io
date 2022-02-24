@@ -42,6 +42,11 @@
 	text-align: center;
 	color: #b8b8b8;
 }
+
+.casebox .nav{margin-bottom: 20px;}
+
+
+
 .box .list1 h3{
 	font-size: 14px;
 	font-weight: 700;
@@ -126,6 +131,8 @@
 	margin-bottom: 50px;
 }
 
+
+.casename{margin:-14px auto 20px;text-align: center;font-size:15px;}
 
 
 
