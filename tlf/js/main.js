@@ -1,10 +1,13 @@
 $(function(){
+	
 	var caseList = [
 		[
 			{name:'周生生幸运捉福娃',img:'case1.png',link:'case1'},
 		],
 		[],
-		[],
+		[
+			{name:'logo设计',img:'case3.png',link:'case3'}
+		],
 		[],
 		[],
 		[],
