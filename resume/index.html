@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<title>广州UI设计-汤丽芳个人网站-JIMI设计</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="Keywords" content="">
+<meta name="description" content="">
+	
+<link rel="shortcut icon" href="http://jimiui.com/img/logo.png">
+<link rel="stylesheet" type="text/css" href="image/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="image/animate.min.css">
+<link rel="stylesheet" type="text/css" href="image/style.css">
+<link rel="stylesheet" type="text/css" href="image/css.css">
+<script src="js/jquery-3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/singlePageNav.min.js"></script>
+<script>
+$(function(){
+/*导航跳转效果插件*/
+$('.nav').singlePageNav({
+offset:70
+});
+/*小屏幕导航点击关闭菜单*/
+$('.navbar-collapse a').click(function(){
+$('.navbar-collapse').collapse('hide');
+});
+})
+</script>
+<script>
+	new WOW().init();
+</script>
+
+
+
+
+</head>
+
+<body>
+<!--以下为导航-->	
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="container">
+			<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="http://jimiui.com/#">
+				  	<img class="img-responsive" style="height: 100%" src="image/jimi.png">
+				  </a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" aria-expanded="false">
+				  <ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#carousel-example-generic" class="current">首页 <span class="sr-only">(current)</span></a></li>
+						<li><a href="#service" class="">服务范围</a></li>
+					  	<li><a href="#casebox" class="">案例展示</a></li>
+					  	<li><a href="#footer" class="">关于我</a></li>
+				  </ul>
+			</div>
+		</div>
+  	</div>
+</nav>
+
+<!--以下为轮播-->	
+<div id="carousel-example-generic" class="carousel slide banner" data-ride="carousel">
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner" role="listbox">
+			<div class="item active">
+				  <img src="image/banner.jpg" alt="...">
+			</div>
+	  </div>
+</div>
+<!--test
+<div class="container">
+	<div class="col-md-4 col-sm-6 col-xs-12">
+		<div class="he_ZoomInImg">
+                <img class="he_ZoomInImg_img" src="img/a1.jpg" alt="Image 01">
+                <div class="he_ZoomInImg_caption">
+                    <h3 class="he_ZoomInImg_caption_h">APP设计</h3>
+                    <p class="he_ZoomInImg_caption_p">易途旅行app</p>
+                    <a class="he_ZoomInImg_caption_a" href="http://www.helloweba.com/" target="_blank"></a>
+                </div>
+        </div>
+	</div>	
+</div>
+-->
+	
+<!--以下为服务范围-->
+<div class="container service" id="service">
+	
+	<h1 class="tit wow animate bounceIn animated" style="visibility: visible; animation-name: bounceIn;">服务范围</h1>
+	<p class="m wow animate bounceIn animated" style="visibility: visible; animation-name: bounceIn;">Scope Of Services</p>
+	
+	<div class="box col-md-3 col-sm-6 col-xs-6">
+		<div class="list1 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+			<img class="img-responsive" src="image/icon1.png">
+			<h3>交互设计</h3>
+			<p>Interactive Design</p>
+		</div>
+	</div>
+	<div class="box col-md-3 col-sm-6 col-xs-6">
+		<div class="list1 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+			<img class="img-responsive" src="image/icon2.png">
+			<h3>网页设计</h3>
+			<p>Web Design</p>
+		</div>
+	</div>
+	<div class="box col-md-3 col-sm-6 col-xs-6">
+		<div class="list1 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+			<img class="img-responsive" src="image/icon3.png">
+			<h3>移动端设计</h3>
+			<p>Mobile Design</p>
+		</div>
+	</div>
+	<div class="box col-md-3 col-sm-6 col-xs-6">
+		<div class="list1 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+			<img class="img-responsive" src="image/icon4.png">
+			<h3>平面设计</h3>
+			<p>Graphic Design</p>
+		</div>
+	</div>
+</div>
+	
+<!--以下为内容-->
+<div class="container casebox" id="casebox">
+	
+	<h1 class="tit wow animate bounceIn animated" style="visibility: visible; animation-name: bounceIn;">案例展示</h1>
+	<p class="m wow animate bounceIn animated" style="visibility: visible; animation-name: bounceIn;">Case Presentation</p>
+	
+	<div class="row">
+		<div class="box2 col-xs-12 col-sm-6 col-md-4 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+			<a target="_blank" href="http://jimiui.com/app.html" class="thumbnail">
+				<img src="image/a1.jpg" alt="APP设计">
+				<p class="mask">APP设计</p>
+			</a>
+		</div>
+		<div class="box2 col-xs-12 col-sm-6 col-md-4 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+			<a target="_blank" href="http://jimiui.com/web.html" class="thumbnail">
+				<img src="image/a2.jpg" alt="WEB设计">
+				<p class="mask">网页设计</p>
+			</a>
+		</div>
+		<div class="box2 col-xs-12 col-sm-6 col-md-4 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+			<a target="_blank" href="http://jimiui.com/pm.html" class="thumbnail">
+				<img src="image/a3.jpg" alt="平面设计">
+				<p class="mask">平面设计</p>
+			</a>
+		</div>
+		<div class="box2 col-xs-12 col-sm-6 col-md-4 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+			<a target="_blank" href="http://jimiui.com/vi.html" class="thumbnail">
+				<img src="image/a4.gif" alt="VI设计">
+				<p class="mask">VI设计</p>
+			</a>
+		</div>
+		<div class="box2 col-xs-12 col-sm-6 col-md-4 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+			<a target="_blank" href="http://jimiui.com/icon.html" class="thumbnail">
+				<img src="image/a5.jpg" alt="ICON设计">
+				<p class="mask">图标设计</p>
+			</a>
+		</div>
+		<div class="box2 col-xs-12 col-sm-6 col-md-4 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+			<a target="_blank" href="http://jimiui.com/ch.html" class="thumbnail">
+				<img src="image/a6.jpg" alt="插画设计">
+				<p class="mask">插画设计</p>
+			</a>
+		</div>
+		<div class="box2 col-xs-12 col-sm-6 col-md-4 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+			<a target="_blank" href="http://jimiui.com/zt.html" class="thumbnail">
+				<img src="image/a7.jpg" alt="字体设计">
+				<p class="mask">字体设计</p>
+			</a>
+		</div>
+		<div class="box2 col-xs-12 col-sm-6 col-md-4 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+			<a target="_blank" href="http://jimiui.com/dx.html" class="thumbnail">
+				<img src="image/a8.gif" alt="动效设计">
+				<p class="mask">动效设计</p>
+			</a>
+		</div>
+		<div class="box2 col-xs-12 col-sm-6 col-md-4 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+			<a target="_blank" href="http://jimiui.com/szy.html" class="thumbnail">
+				<img src="image/a10.jpg" alt="三折页设计">
+				<p class="mask">三折页设计</p>
+			</a>
+		</div>
+		<div class="box2 col-xs-12 col-sm-6 col-md-4 wow animate fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+			<a target="_blank" href="http://jimiui.com/sy.html" class="thumbnail">
+				<img src="image/a9.jpg" alt="摄影">
+				<p class="mask">摄影作品</p>
+			</a>
+		</div>
+		
+	</div>	
+</div>
+
+<!--以下为页脚-->
+
+<div class="container-fluid footer" id="footer">
+	<div class="container">
+		
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<p>TEL:13192256499</p>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<p>QQ:1325966547</p>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<p>E-mail:1325966547@qq.com</p>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<img class="img-responsive" src="image/wx.jpg">
+		</div>
+		
+	</div>	
+</div>
+
+	
+
+
+</body></html>
