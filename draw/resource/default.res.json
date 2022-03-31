@@ -1,0 +1,50 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,indexbg_png,index_btn_png,pen1_png,hua_zhe_png,d_back_png,qingkong_png,xiangpi_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "description_json",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+			"name": "indexbg_png",
+			"type": "image",
+			"url": "assets/indexbg.png"
+		},
+		{
+			"name": "index_btn_png",
+			"type": "image",
+			"url": "assets/index_btn.png"
+		},
+		{
+			"name": "pen1_png",
+			"type": "image",
+			"url": "assets/pen1.png"
+		},
+		{
+			"name": "hua_zhe_png",
+			"type": "image",
+			"url": "assets/hua_zhe.png"
+		},
+		{
+			"name": "d_back_png",
+			"type": "image",
+			"url": "assets/d_back.png"
+		},
+		{
+			"name": "qingkong_png",
+			"type": "image",
+			"url": "assets/qingkong.png"
+		},
+		{
+			"name": "xiangpi_png",
+			"type": "image",
+			"url": "assets/xiangpi.png"
+		}
+	]
+}
