@@ -34,8 +34,9 @@
 	</head>
 	<body id='text'>123
 	<script>
+		document.getElementById('text').innerHTML = '4561';
 		var openlink = localStorage.getItem('openlink');
-		document.getElementById('text').innerHTML = '456';
+		document.getElementById('text').innerHTML = '4562';
 		if(openlink){
 			document.getElementById('text').innerHTML = 'openlink';
 		}else{
