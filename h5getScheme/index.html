@@ -19,7 +19,8 @@
 		  })
 		  await window.tcb.init()
 		  const res = await window.tcb.callFunction(window.Info.function)
-		  //console.log(res)
+		  console.log(res)
+		  localStorage.setItem('openlink',res.result.openlink);
 		  document.getElementById('text').innerHTML = res.result.openlink;
 		  //completion(res.result.openlink)
 		 
@@ -30,21 +31,24 @@
 		 
 		 
 		</script>
-		
-		 
-		
 	</head>
-	<body id='text'>132
+	<body id='text'>123
 	<script>
-		initWeapp({
-		  appId: 'wx7110b9dcd3ade8af', //替换为自己小程序的AppID
-		  gh_ID: 'gh_de6220e0a4d6', //替换为自己小程序的原始ID
-		  env_ID: 'haibao-5j97s', //替换小程序底下云开发环境ID
-		  function: {
-		    name:'openMini', //提供UrlScheme服务的云函数名称
-		    data:{path:'/pages/rili/index'} //向这个云函数中传入的自定义参数
-		  }
-		})
+		var openlink = localStorage.getItem('openlink');
+		if(openlink){
+			document.getElementById('text').innerHTML = openlink;
+		}else{
+			initWeapp({
+			  appId: 'wx7110b9dcd3ade8af', //替换为自己小程序的AppID
+			  gh_ID: 'gh_de6220e0a4d6', //替换为自己小程序的原始ID
+			  env_ID: 'haibao-5j97s', //替换小程序底下云开发环境ID
+			  function: {
+			    name:'openMini', //提供UrlScheme服务的云函数名称
+			    data:{path:'/pages/rili/index'} //向这个云函数中传入的自定义参数
+			  }
+			})
+		}
+		
 	</script>
 	</body>
 </html>
