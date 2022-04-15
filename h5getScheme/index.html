@@ -25,15 +25,7 @@
 		 
 		}
 		 window.onload = function(){
-		   initWeapp({
-		     appId: 'wx7110b9dcd3ade8af', //替换为自己小程序的AppID
-		     gh_ID: 'gh_de6220e0a4d6', //替换为自己小程序的原始ID
-		     env_ID: 'haibao-5j97s', //替换小程序底下云开发环境ID
-		     function: {
-		       name:'openMini', //提供UrlScheme服务的云函数名称
-		       data:{path:'/pages/rili/index'} //向这个云函数中传入的自定义参数
-		     }
-		   })
+		  
 		 }
 		 
 		 
@@ -44,7 +36,15 @@
 	</head>
 	<body id='text'>132
 	<script>
-		document.getElementById('text').innerHTML = '测试测试';
+		initWeapp({
+		  appId: 'wx7110b9dcd3ade8af', //替换为自己小程序的AppID
+		  gh_ID: 'gh_de6220e0a4d6', //替换为自己小程序的原始ID
+		  env_ID: 'haibao-5j97s', //替换小程序底下云开发环境ID
+		  function: {
+		    name:'openMini', //提供UrlScheme服务的云函数名称
+		    data:{path:'/pages/rili/index'} //向这个云函数中传入的自定义参数
+		  }
+		})
 	</script>
 	</body>
 </html>
