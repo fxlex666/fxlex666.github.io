@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,indexbg_png,index_btn_png,pen1_png,hua_zhe_png,d_back_png,qingkong_png,xiangpi_png",
+			"keys": "description_json,indexbg_png,index_btn_png,pen1_png,hua_zhe_png,d_back_png,qingkong_png,xiangpi_png,apple_c1_png,apple_c2_png,apple1_png,apple1_svg,apple2_png,apple2_svg",
 			"name": "preload"
 		}
 	],
@@ -45,6 +45,36 @@
 			"name": "xiangpi_png",
 			"type": "image",
 			"url": "assets/xiangpi.png"
+		},
+		{
+			"name": "apple_c1_png",
+			"type": "image",
+			"url": "assets/apple_c1.png"
+		},
+		{
+			"name": "apple_c2_png",
+			"type": "image",
+			"url": "assets/apple_c2.png"
+		},
+		{
+			"name": "apple1_png",
+			"type": "image",
+			"url": "assets/apple1.png"
+		},
+		{
+			"name": "apple1_svg",
+			"type": "image",
+			"url": "assets/apple1.svg"
+		},
+		{
+			"name": "apple2_png",
+			"type": "image",
+			"url": "assets/apple2.png"
+		},
+		{
+			"name": "apple2_svg",
+			"type": "image",
+			"url": "assets/apple2.svg"
 		}
 	]
 }
