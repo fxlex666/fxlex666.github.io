@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,indexbg_png,index_btn_png,pen1_png,hua_zhe_png,d_back_png,qingkong_png,xiangpi_png,apple_c1_png,apple_c2_png,apple1_png,apple1_svg,apple2_png,apple2_svg",
+			"keys": "description_json,indexbg_png,index_btn_png,pen1_png,hua_zhe_png,d_back_png,qingkong_png,xiangpi_png,apple_c1_png,apple_c2_png,apple1_png,apple1_svg,apple2_png,apple2_svg,pen2_png,pen3_png,pen4_png,pen5_png,pen6_png,pen7_png,pen8_png,pen9_png,pen10_png,pen11_png,pen12_png,pen13_png,pen14_png,pen15_png,pen16_png,pen17_png,pen18_png,pen19_png,pen20_png,save_btn_png,back_btn_png,delete_btn_png,pen_btn_png,home_btn_png,bichu_png,bichuk_png",
 			"name": "preload"
 		}
 	],
@@ -75,6 +75,136 @@
 			"name": "apple2_svg",
 			"type": "image",
 			"url": "assets/apple2.svg"
+		},
+		{
+			"name": "pen2_png",
+			"type": "image",
+			"url": "assets/pen2.png"
+		},
+		{
+			"name": "pen3_png",
+			"type": "image",
+			"url": "assets/pen3.png"
+		},
+		{
+			"name": "pen4_png",
+			"type": "image",
+			"url": "assets/pen4.png"
+		},
+		{
+			"name": "pen5_png",
+			"type": "image",
+			"url": "assets/pen5.png"
+		},
+		{
+			"name": "pen6_png",
+			"type": "image",
+			"url": "assets/pen6.png"
+		},
+		{
+			"name": "pen7_png",
+			"type": "image",
+			"url": "assets/pen7.png"
+		},
+		{
+			"name": "pen8_png",
+			"type": "image",
+			"url": "assets/pen8.png"
+		},
+		{
+			"name": "pen9_png",
+			"type": "image",
+			"url": "assets/pen9.png"
+		},
+		{
+			"name": "pen10_png",
+			"type": "image",
+			"url": "assets/pen10.png"
+		},
+		{
+			"name": "pen11_png",
+			"type": "image",
+			"url": "assets/pen11.png"
+		},
+		{
+			"name": "pen12_png",
+			"type": "image",
+			"url": "assets/pen12.png"
+		},
+		{
+			"name": "pen13_png",
+			"type": "image",
+			"url": "assets/pen13.png"
+		},
+		{
+			"name": "pen14_png",
+			"type": "image",
+			"url": "assets/pen14.png"
+		},
+		{
+			"name": "pen15_png",
+			"type": "image",
+			"url": "assets/pen15.png"
+		},
+		{
+			"name": "pen16_png",
+			"type": "image",
+			"url": "assets/pen16.png"
+		},
+		{
+			"name": "pen17_png",
+			"type": "image",
+			"url": "assets/pen17.png"
+		},
+		{
+			"name": "pen18_png",
+			"type": "image",
+			"url": "assets/pen18.png"
+		},
+		{
+			"name": "pen19_png",
+			"type": "image",
+			"url": "assets/pen19.png"
+		},
+		{
+			"name": "pen20_png",
+			"type": "image",
+			"url": "assets/pen20.png"
+		},
+		{
+			"name": "save_btn_png",
+			"type": "image",
+			"url": "assets/save_btn.png"
+		},
+		{
+			"name": "back_btn_png",
+			"type": "image",
+			"url": "assets/back_btn.png"
+		},
+		{
+			"name": "delete_btn_png",
+			"type": "image",
+			"url": "assets/delete_btn.png"
+		},
+		{
+			"name": "pen_btn_png",
+			"type": "image",
+			"url": "assets/pen_btn.png"
+		},
+		{
+			"name": "home_btn_png",
+			"type": "image",
+			"url": "assets/home_btn.png"
+		},
+		{
+			"name": "bichu_png",
+			"type": "image",
+			"url": "assets/bichu.png"
+		},
+		{
+			"name": "bichuk_png",
+			"type": "image",
+			"url": "assets/bichuk.png"
 		}
 	]
 }
