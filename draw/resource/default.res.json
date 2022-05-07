@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,indexbg_png,index_btn_png,pen1_png,hua_zhe_png,d_back_png,qingkong_png,xiangpi_png,apple_c1_png,apple_c2_png,apple1_png,apple1_svg,apple2_png,apple2_svg,pen2_png,pen3_png,pen4_png,pen5_png,pen6_png,pen7_png,pen8_png,pen9_png,pen10_png,pen11_png,pen12_png,pen13_png,pen14_png,pen15_png,pen16_png,pen17_png,pen18_png,pen19_png,pen20_png,save_btn_png,back_btn_png,delete_btn_png,pen_btn_png,home_btn_png,bichu_png,bichuk_png,apple_all_png,apple_line_png",
+			"keys": "description_json,indexbg_png,index_btn_png,pen1_png,hua_zhe_png,d_back_png,qingkong_png,xiangpi_png,apple_c1_png,apple_c2_png,apple1_png,apple1_svg,apple2_png,apple2_svg,pen2_png,pen3_png,pen4_png,pen5_png,pen6_png,pen7_png,pen8_png,pen9_png,pen10_png,pen11_png,pen12_png,pen13_png,pen14_png,pen15_png,pen16_png,pen17_png,pen18_png,pen19_png,pen20_png,save_btn_png,back_btn_png,delete_btn_png,pen_btn_png,home_btn_png,bichu_png,bichuk_png,apple_all_png,apple_line_png,run_jt_png",
 			"name": "preload"
 		}
 	],
@@ -215,6 +215,11 @@
 			"name": "apple_line_png",
 			"type": "image",
 			"url": "assets/apple_line.png"
+		},
+		{
+			"name": "run_jt_png",
+			"type": "image",
+			"url": "assets/run_jt.png"
 		}
 	]
 }
