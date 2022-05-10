@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,indexbg_png,index_btn_png,pen1_png,hua_zhe_png,d_back_png,qingkong_png,xiangpi_png,apple_c1_png,apple_c2_png,apple1_png,apple2_png,pen2_png,pen3_png,pen4_png,pen5_png,pen6_png,pen7_png,pen8_png,pen9_png,pen10_png,pen11_png,pen12_png,pen13_png,pen14_png,pen15_png,pen16_png,pen17_png,pen18_png,pen19_png,pen20_png,save_btn_png,back_btn_png,delete_btn_png,pen_btn_png,home_btn_png,bichu_png,bichuk_png,run_jt_png,apple3_png,apple_c3_png,apple_line2_png,apple_line1_png,apple_line3_png",
+			"keys": "description_json,indexbg_png,index_btn_png,pen1_png,hua_zhe_png,d_back_png,qingkong_png,xiangpi_png,apple_c1_png,apple_c2_png,apple1_png,apple2_png,pen2_png,pen3_png,pen4_png,pen5_png,pen6_png,pen7_png,pen8_png,pen9_png,pen10_png,pen11_png,pen12_png,pen13_png,pen14_png,pen15_png,pen16_png,pen17_png,pen18_png,pen19_png,pen20_png,save_btn_png,back_btn_png,delete_btn_png,pen_btn_png,home_btn_png,bichu_png,bichuk_png,run_jt_png,apple3_png,apple_c3_png,apple_line2_png,apple_line1_png,apple_line3_png,choose_bg_png,f_fish_png,f_fruit_png,f_luobo_png,f_car_png,f_other_png,choose_tapbg_png,choose1_1_png",
 			"name": "preload"
 		}
 	],
@@ -225,6 +225,46 @@
 			"name": "apple_line3_png",
 			"type": "image",
 			"url": "assets/apple_line3.png"
+		},
+		{
+			"name": "choose_bg_png",
+			"type": "image",
+			"url": "assets/choose_bg.png"
+		},
+		{
+			"name": "f_fish_png",
+			"type": "image",
+			"url": "assets/f_fish.png"
+		},
+		{
+			"name": "f_fruit_png",
+			"type": "image",
+			"url": "assets/f_fruit.png"
+		},
+		{
+			"name": "f_luobo_png",
+			"type": "image",
+			"url": "assets/f_luobo.png"
+		},
+		{
+			"name": "f_car_png",
+			"type": "image",
+			"url": "assets/f_car.png"
+		},
+		{
+			"name": "f_other_png",
+			"type": "image",
+			"url": "assets/f_other.png"
+		},
+		{
+			"name": "choose_tapbg_png",
+			"type": "image",
+			"url": "assets/choose_tapbg.png"
+		},
+		{
+			"name": "choose1_1_png",
+			"type": "image",
+			"url": "assets/choose1_1.png"
 		}
 	]
 }
