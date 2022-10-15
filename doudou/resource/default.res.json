@@ -1,0 +1,105 @@
+{
+	"groups": [
+		{
+			"keys": "bg_jpg,egret_icon_png,description_json,index_btn1_png,indexbg_png,index_btn2_png,xiaozhu_png,jindou_png,newParticle_png,newParticle_json,qiang_png,xiaojindou_png,peo_right_hu_png,peo_left_hu_png,peo_right_png,peo_left_png,peo_top_png,dian_png,shandian_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"name": "bg_jpg",
+			"type": "image",
+			"url": "assets/bg.jpg"
+		},
+		{
+			"name": "egret_icon_png",
+			"type": "image",
+			"url": "assets/egret_icon.png"
+		},
+		{
+			"name": "description_json",
+			"type": "json",
+			"url": "config/description.json"
+		},
+		{
+			"name": "index_btn1_png",
+			"type": "image",
+			"url": "assets/index_btn1.png"
+		},
+		{
+			"name": "indexbg_png",
+			"type": "image",
+			"url": "assets/indexbg.png"
+		},
+		{
+			"name": "index_btn2_png",
+			"type": "image",
+			"url": "assets/index_btn2.png"
+		},
+		{
+			"name": "xiaozhu_png",
+			"type": "image",
+			"url": "assets/xiaozhu.png"
+		},
+		{
+			"name": "jindou_png",
+			"type": "image",
+			"url": "assets/jindou.png"
+		},
+		{
+			"name": "newParticle_png",
+			"type": "image",
+			"url": "assets/newParticle.png"
+		},
+		{
+			"name": "newParticle_json",
+			"type": "json",
+			"url": "assets/newParticle.json"
+		},
+		{
+			"name": "qiang_png",
+			"type": "image",
+			"url": "assets/qiang.png"
+		},
+		{
+			"name": "xiaojindou_png",
+			"type": "image",
+			"url": "assets/xiaojindou.png"
+		},
+		{
+			"name": "peo_right_hu_png",
+			"type": "image",
+			"url": "assets/peo_right_hu.png"
+		},
+		{
+			"name": "peo_left_hu_png",
+			"type": "image",
+			"url": "assets/peo_left_hu.png"
+		},
+		{
+			"name": "peo_right_png",
+			"type": "image",
+			"url": "assets/peo_right.png"
+		},
+		{
+			"name": "peo_left_png",
+			"type": "image",
+			"url": "assets/peo_left.png"
+		},
+		{
+			"name": "peo_top_png",
+			"type": "image",
+			"url": "assets/peo_top.png"
+		},
+		{
+			"name": "dian_png",
+			"type": "image",
+			"url": "assets/dian.png"
+		},
+		{
+			"name": "shandian_png",
+			"type": "image",
+			"url": "assets/shandian.png"
+		}
+	]
+}
