@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,index_btn1_png,indexbg_png,index_btn2_png,xiaozhu_png,jindou_png,newParticle_png,newParticle_json,qiang_png,xiaojindou_png,peo_right_hu_png,peo_left_hu_png,peo_right_png,peo_left_png,peo_top_png,dian_png,shandian_png,xiao_mp3",
+			"keys": "description_json,index_btn1_png,indexbg_png,index_btn2_png,jindou_png,newParticle_png,newParticle_json,qiang_png,xiaojindou_png,peo_right_hu_png,peo_right_png,peo_top_png,dian_png,shandian_png,xiao_mp3,zhadan_png,baozhao_json,baozhao_png",
 			"name": "preload"
 		}
 	],
@@ -25,11 +25,6 @@
 			"name": "index_btn2_png",
 			"type": "image",
 			"url": "assets/index_btn2.png"
-		},
-		{
-			"name": "xiaozhu_png",
-			"type": "image",
-			"url": "assets/xiaozhu.png"
 		},
 		{
 			"name": "jindou_png",
@@ -62,19 +57,9 @@
 			"url": "assets/peo_right_hu.png"
 		},
 		{
-			"name": "peo_left_hu_png",
-			"type": "image",
-			"url": "assets/peo_left_hu.png"
-		},
-		{
 			"name": "peo_right_png",
 			"type": "image",
 			"url": "assets/peo_right.png"
-		},
-		{
-			"name": "peo_left_png",
-			"type": "image",
-			"url": "assets/peo_left.png"
 		},
 		{
 			"name": "peo_top_png",
@@ -95,6 +80,21 @@
 			"name": "xiao_mp3",
 			"type": "sound",
 			"url": "assets/xiao.mp3"
+		},
+		{
+			"name": "zhadan_png",
+			"type": "image",
+			"url": "assets/zhadan.png"
+		},
+		{
+			"name": "baozhao_json",
+			"type": "json",
+			"url": "assets/baozhao.json"
+		},
+		{
+			"name": "baozhao_png",
+			"type": "image",
+			"url": "assets/baozhao.png"
 		}
 	]
 }
