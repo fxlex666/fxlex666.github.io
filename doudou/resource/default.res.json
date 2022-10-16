@@ -1,21 +1,11 @@
 {
 	"groups": [
 		{
-			"keys": "bg_jpg,egret_icon_png,description_json,index_btn1_png,indexbg_png,index_btn2_png,xiaozhu_png,jindou_png,newParticle_png,newParticle_json,qiang_png,xiaojindou_png,peo_right_hu_png,peo_left_hu_png,peo_right_png,peo_left_png,peo_top_png,dian_png,shandian_png",
+			"keys": "description_json,index_btn1_png,indexbg_png,index_btn2_png,xiaozhu_png,jindou_png,newParticle_png,newParticle_json,qiang_png,xiaojindou_png,peo_right_hu_png,peo_left_hu_png,peo_right_png,peo_left_png,peo_top_png,dian_png,shandian_png,xiao_mp3",
 			"name": "preload"
 		}
 	],
 	"resources": [
-		{
-			"name": "bg_jpg",
-			"type": "image",
-			"url": "assets/bg.jpg"
-		},
-		{
-			"name": "egret_icon_png",
-			"type": "image",
-			"url": "assets/egret_icon.png"
-		},
 		{
 			"name": "description_json",
 			"type": "json",
@@ -100,6 +90,11 @@
 			"name": "shandian_png",
 			"type": "image",
 			"url": "assets/shandian.png"
+		},
+		{
+			"name": "xiao_mp3",
+			"type": "sound",
+			"url": "assets/xiao.mp3"
 		}
 	]
 }
