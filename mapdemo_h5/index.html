@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.geziList{overflow: scroll;width:100%;margin-top:30px;height:70%;}
+			.gezili{display: flex;}			.gezi{width:30px;height:30px;border:1px solid #666;flex-shrink: 0;}
+	
+			.choose{display: flex;flex-wrap: wrap;    justify-content: space-around;}
+			.choose .on{border:4px solid #000;}
+			.choose div{width:40px;height:40px;border: 1px solid #666;flex-shrink: 0;text-align: center;line-height: 40px;}
+			.kong{background-color: #999;}
+			.lu{background-color: aquamarine;}
+			.qiang{background-color: red;}
+			.dadou{background-color: #b85b00;}
+			.xiaodou{background-color: #ffb369;}
+			.zhadan{background-color: #00217e;color:#fff;}
+			.jian{background-color: #3eff1e;}
+			.dian{background-color: #085600;color:#fff;}
+			.end{background-color: #000;color:#fff;}
+			
+			.resultbox .text{width:80%; overflow: hidden;  text-overflow: ellipsis;white-space: nowrap}
+			.resultbox{width:90%;margin:10px auto;height:40px;font-size:8px;display: flex; align-items: center;
+				
+				
+			}
+			.resultbox .btn{width:80px;height:35px;border-radius: 10;border:1px solid #666;text-align: center;line-height: 35px;margin-left:20px;font-size:16px;}
+			
+			.inputbox{width:90%;margin:10px auto;height:40px;font-size:8px;display: flex; align-items: center;
+				
+			}
+			.inputbox input{width:80%;border:1px solid #000;}
+			.inputbox .btn{width:80px;height:35px;border-radius: 10;border:1px solid #666;text-align: center;line-height: 35px;margin-left:20px;font-size:16px;}
+		</style>
+		<script src="js/jquery-3.6.1.min.js"></script>
+		<script src="js/clipboard.min.js"></script>
+	</head>
+	<body>
+		<div class="choose">
+			<div class="kong li" data-num="999">清空</div>
+			<div class="lu li"  data-num="1">路</div>
+			<div class="qiang li" data-num="10">墙</div>
+			<div class="dadou li"  data-num="2">大豆</div>
+			<div class="xiaodou li" data-num="3">小豆</div>
+			<div class="dian li"  data-num="11">电</div>
+			<div class="zhadan li"  data-num="12">炸弹</div>
+			
+			<div class="jian li"  data-num="13">剑</div>
+			<div class="end li"  data-num="99">end</div>
+			<div class="size">小</div>
+		</div>
+		<div class="geziList">
+			<div class="gezili">
+				<div class="gezi"></div>
+			</div>
+		</div>
+		<div class="resultbox">
+			<button class="copybtn" data-clipboard-text=''>
+			    复制
+			</button>
+		</div>
+		
+		<div class="inputbox">
+			<input type="text" class="shuru" maxlength="-1" value="">
+			<div class="btn" onclick="putdata()">
+				填充数据
+			</div>
+		</div>
+	</body>
+	<script>
+		let nowtype = -1;
+		let nowdata = [{x:6,y:6,type:1}]
+		
+		let hang = 100;
+		let lie = 100;
+		let html = '';
+		for(let y=0;y<hang;y++){
+			html+='<div class="gezili">'
+			for(let x=0;x<lie;x++){
+				html+=`<div class="gezi" data-x="${x}" data-y="${y}"></div>`
+			}
+			html+='</div>'
+		}
+		$(".geziList").html(html);
+		
+		$(".geziList").height(window.innerHeight*0.7)
+		
+		updatepage();
+		
+		
+		$(".gezi").on('click',function(){
+			if(nowtype==-1){
+				return;
+			}
+			
+			let x = $(this).attr('data-x');
+			let y = $(this).attr('data-y');
+			for(let key in nowdata){
+				if(nowdata[key].x==x && nowdata[key].y==y){
+					nowdata.splice(key,1);
+					break;
+				}
+			}
+			let nowp = {x:x,y:y,type:nowtype};
+			nowdata.push(nowp);
+			$(".copybtn").attr('data-clipboard-text',JSON.stringify(nowdata));
+			 
+			let classname = '';
+			switch (Number(nowtype)){
+				case 10:
+					classname = 'qiang';
+					break;
+				case 1:
+					classname = 'lu';
+					break;
+				case 2:
+					classname = 'dadou';
+					break;
+				case 3:
+					classname = 'xiaodou';
+					break;
+				case 11:
+					classname = 'dian';
+					break;
+				case 12:
+					classname = 'zhadan';
+					break;
+				case 13:
+					classname = 'jian';
+					break;
+				case 99:
+					classname = 'end';
+					break;
+				default:
+					break;
+			}
+			$(this).attr('class','gezi '+classname);
+		})
+		
+		$(".choose .size").click(function(){
+			if($(this).text()=='小'){
+				$(".gezi").css({'width':'8px','height':'8px'});
+				$(this).text('大')
+			}else{
+				$(".gezi").css({'width':'30px','height':'30px'});
+				$(this).text('小')
+			}
+		})
+		
+		
+		$(".choose .li").click(function(){
+			nowtype = $(this).attr("data-num");
+			$(this).addClass("on").siblings().removeClass('on');
+		})
+		
+		// function changetype(num,that){
+		// 	nowtype = num;
+		// 	$(that).addClass("on").siblings().removeClass('on');
+		// }
+		
+		
+		 $(document).ready(function(){  
+		    var clipboard = new Clipboard('.copybtn');
+			clipboard.on('success',function(e){
+			 e.clearSelection();
+			 alert('复制成功');
+			 });
+		})  
+		
+		function putdata(){
+			let shurudata = $('.shuru').val();
+			nowdata = JSON.parse(shurudata);
+			console.log(nowdata);
+			updatepage()
+			
+		}
+		
+		function updatepage(){
+			
+			for(let key in nowdata){
+					let nowtype = nowdata[key].type;
+					let classname = '';
+					switch (Number(nowtype)){
+						case 10:
+							classname = 'qiang';
+							break;
+						case 1:
+							classname = 'lu';
+							break;
+						case 2:
+							classname = 'dadou';
+							break;
+						case 3:
+							classname = 'xiaodou';
+							break;
+						case 11:
+							classname = 'dian';
+							break;
+						case 12:
+							classname = 'zhadan';
+							break;
+						case 13:
+							classname = 'jian';
+							break;
+						case 99:
+							classname = 'end';
+							break;
+						default:
+							break;
+					}
+					$('.geziList .gezili').eq(nowdata[key].y).find('.gezi').eq(nowdata[key].x).attr('class','gezi '+classname);
+				
+			}
+		}
+		
+		
+		
+	</script>
+</html>
