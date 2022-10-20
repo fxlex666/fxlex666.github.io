@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,index_btn1_png,indexbg_png,index_btn2_png,jindou_png,newParticle_png,newParticle_json,qiang_png,xiaojindou_png,peo_right_hu_png,peo_right_png,peo_top_png,dian_png,shandian_png,xiao_mp3,zhadan_png,baozhao_json,baozhao_png,jian_png,jian_k_png,zhadangif_png,zhadangif_json,boomgif_png,boomgif_json",
+			"keys": "description_json,index_btn1_png,indexbg_png,index_btn2_png,jindou_png,newParticle_png,newParticle_json,qiang_png,xiaojindou_png,peo_right_hu_png,peo_right_png,peo_top_png,dian_png,shandian_png,xiao_mp3,zhadan_png,baozhao_json,baozhao_png,jian_png,jian_k_png,zhadangif_png,zhadangif_json,boomgif_png,boomgif_json,road_end_png",
 			"name": "preload"
 		}
 	],
@@ -125,6 +125,11 @@
 			"name": "boomgif_json",
 			"type": "json",
 			"url": "assets/boomgif.json"
+		},
+		{
+			"name": "road_end_png",
+			"type": "image",
+			"url": "assets/road_end.png"
 		}
 	]
 }
