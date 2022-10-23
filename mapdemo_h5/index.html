@@ -111,7 +111,7 @@
 					break;
 				}
 			}
-			let nowp = {x:x,y:y,type:nowtype};
+			let nowp = {x:Number(x),y:Number(y),type:Number(nowtype)};
 			nowdata.push(nowp);
 			$(".copybtn").attr('data-clipboard-text',JSON.stringify(nowdata));
 			 
@@ -180,7 +180,13 @@
 		function putdata(){
 			let shurudata = $('.shuru').val();
 			nowdata = JSON.parse(shurudata);
+			for(let key in nowdata){
+				nowdata[key].x = Number(nowdata[key].x);
+				nowdata[key].y = Number(nowdata[key].y);
+				nowdata[key].type = Number(nowdata[key].type);
+			}
 			console.log(nowdata);
+			$(".copybtn").attr('data-clipboard-text',JSON.stringify(nowdata));
 			updatepage()
 			
 		}
