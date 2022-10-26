@@ -15,6 +15,7 @@
 		<style>
 			.geziList{overflow: scroll;width:100%;margin-top:30px;height:70%;}
 			.gezili{display: flex;}			.gezi{width:30px;height:30px;border:1px solid #666;flex-shrink: 0;}
+			.gezi img{width:100%;height:100%;}
 	
 			.choose{display: flex;flex-wrap: wrap;    justify-content: space-around;}
 			.choose .on{border:4px solid #000;}
@@ -79,7 +80,7 @@
 	</body>
 	<script>
 		let nowtype = -1;
-		let nowdata = [{x:6,y:6,type:1}]
+		let nowdata = [{x:7,y:9,type:1}]
 		
 		let hang = 100;
 		let lie = 100;
@@ -87,7 +88,12 @@
 		for(let y=0;y<hang;y++){
 			html+='<div class="gezili">'
 			for(let x=0;x<lie;x++){
-				html+=`<div class="gezi" data-x="${x}" data-y="${y}"></div>`
+				if(x==nowdata[0].x&&y==nowdata[0].y){
+					html+=`<div class="gezi" data-x="${x}" data-y="${y}"><img src="img/xiaozhu.png"></div>`
+				}else{
+					html+=`<div class="gezi" data-x="${x}" data-y="${y}"></div>`
+				}
+				
 			}
 			html+='</div>'
 		}
