@@ -27,6 +27,7 @@
 			.xiaodou{background-color: #ffb369;}
 			.zhadan{background-color: #00217e;color:#fff;}
 			.jian{background-color: #3eff1e;}
+			.qiong{background-color: #7f0000;}
 			.dian{background-color: #085600;color:#fff;}
 			.end{background-color: #000;color:#fff;}
 			
@@ -57,6 +58,8 @@
 			<div class="zhadan li"  data-num="12">炸弹</div>
 			
 			<div class="jian li"  data-num="13">剑</div>
+			<div class="qiong li"  data-num="14">穷</div>
+			
 			<div class="end li"  data-num="99">end</div>
 			<div class="size">小</div>
 		</div>
@@ -117,10 +120,6 @@
 					break;
 				}
 			}
-			let nowp = {x:Number(x),y:Number(y),type:Number(nowtype)};
-			nowdata.push(nowp);
-			$(".copybtn").attr('data-clipboard-text',JSON.stringify(nowdata));
-			 
 			let classname = '';
 			switch (Number(nowtype)){
 				case 10:
@@ -144,6 +143,9 @@
 				case 13:
 					classname = 'jian';
 					break;
+				case 14:
+					classname = 'qiong';
+					break;
 				case 99:
 					classname = 'end';
 					break;
@@ -151,6 +153,15 @@
 					break;
 			}
 			$(this).attr('class','gezi '+classname);
+			
+			if(Number(nowtype)!=999){
+				let nowp = {x:Number(x),y:Number(y),type:Number(nowtype)};
+				nowdata.push(nowp);
+			};
+			
+			$(".copybtn").attr('data-clipboard-text',JSON.stringify(nowdata));
+			 
+			
 		})
 		
 		$(".choose .size").click(function(){
@@ -223,6 +234,9 @@
 							break;
 						case 13:
 							classname = 'jian';
+							break;
+						case 14:
+							classname = 'qiong';
 							break;
 						case 99:
 							classname = 'end';
