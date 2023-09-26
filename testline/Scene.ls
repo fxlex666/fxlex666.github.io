@@ -1,0 +1,1 @@
+{"_$ver":1,"_$id":"lx8mwule","_$type":"Scene","left":0,"right":0,"top":0,"bottom":0,"name":"Scene2D","_$comp":[{"_$type":"e60XQm7tTY2BwFAdxb8D1g"}],"_$child":[{"_$id":"jz497s7y","_$type":"VBox","name":"VBox","x":-0.4444444444443434,"y":1237,"width":750,"height":90,"bgColor":"rgba(124, 1, 1, 1)","space":0}]}
