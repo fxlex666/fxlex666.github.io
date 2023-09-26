@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,indexbg_png,index_btn_png,pen1_png,hua_zhe_png,d_back_png,qingkong_png,xiangpi_png",
+			"keys": "description_json,indexbg_png,index_btn_png,pen1_png,hua_zhe_png,d_back_png,qingkong_png,xiangpi_png,apple_c1_png,apple_c2_png,pen2_png,pen3_png,pen4_png,pen5_png,pen6_png,pen7_png,pen8_png,pen9_png,pen10_png,pen11_png,pen12_png,pen13_png,pen14_png,pen15_png,pen16_png,pen17_png,pen18_png,pen19_png,pen20_png,save_btn_png,back_btn_png,delete_btn_png,pen_btn_png,home_btn_png,bichu_png,bichuk_png,run_jt_png,apple_c3_png,apple_line2_png,apple_line1_png,apple_line3_png,choose_bg_png,f_fish_png,f_fruit_png,f_car_png,f_other_png,choose_tapbg_png,choose_tapbg2_png,boluo_c3_png,boluo_c2_png,boluo_c1_png,boluo_line3_png,boluo_line1_png,boluo_line2_png,apple_zhe1_png,apple_zhe2_png,apple_zhe3_png,boluo_zhe1_png,boluo_zhe2_png,boluo_zhe3_png,choose1_2_png,chooseli_bg_png,f_shucai_png",
 			"name": "preload"
 		}
 	],
@@ -45,6 +45,281 @@
 			"name": "xiangpi_png",
 			"type": "image",
 			"url": "assets/xiangpi.png"
+		},
+		{
+			"name": "apple_c1_png",
+			"type": "image",
+			"url": "assets/apple_c1.png"
+		},
+		{
+			"name": "apple_c2_png",
+			"type": "image",
+			"url": "assets/apple_c2.png"
+		},
+		{
+			"name": "pen2_png",
+			"type": "image",
+			"url": "assets/pen2.png"
+		},
+		{
+			"name": "pen3_png",
+			"type": "image",
+			"url": "assets/pen3.png"
+		},
+		{
+			"name": "pen4_png",
+			"type": "image",
+			"url": "assets/pen4.png"
+		},
+		{
+			"name": "pen5_png",
+			"type": "image",
+			"url": "assets/pen5.png"
+		},
+		{
+			"name": "pen6_png",
+			"type": "image",
+			"url": "assets/pen6.png"
+		},
+		{
+			"name": "pen7_png",
+			"type": "image",
+			"url": "assets/pen7.png"
+		},
+		{
+			"name": "pen8_png",
+			"type": "image",
+			"url": "assets/pen8.png"
+		},
+		{
+			"name": "pen9_png",
+			"type": "image",
+			"url": "assets/pen9.png"
+		},
+		{
+			"name": "pen10_png",
+			"type": "image",
+			"url": "assets/pen10.png"
+		},
+		{
+			"name": "pen11_png",
+			"type": "image",
+			"url": "assets/pen11.png"
+		},
+		{
+			"name": "pen12_png",
+			"type": "image",
+			"url": "assets/pen12.png"
+		},
+		{
+			"name": "pen13_png",
+			"type": "image",
+			"url": "assets/pen13.png"
+		},
+		{
+			"name": "pen14_png",
+			"type": "image",
+			"url": "assets/pen14.png"
+		},
+		{
+			"name": "pen15_png",
+			"type": "image",
+			"url": "assets/pen15.png"
+		},
+		{
+			"name": "pen16_png",
+			"type": "image",
+			"url": "assets/pen16.png"
+		},
+		{
+			"name": "pen17_png",
+			"type": "image",
+			"url": "assets/pen17.png"
+		},
+		{
+			"name": "pen18_png",
+			"type": "image",
+			"url": "assets/pen18.png"
+		},
+		{
+			"name": "pen19_png",
+			"type": "image",
+			"url": "assets/pen19.png"
+		},
+		{
+			"name": "pen20_png",
+			"type": "image",
+			"url": "assets/pen20.png"
+		},
+		{
+			"name": "save_btn_png",
+			"type": "image",
+			"url": "assets/save_btn.png"
+		},
+		{
+			"name": "back_btn_png",
+			"type": "image",
+			"url": "assets/back_btn.png"
+		},
+		{
+			"name": "delete_btn_png",
+			"type": "image",
+			"url": "assets/delete_btn.png"
+		},
+		{
+			"name": "pen_btn_png",
+			"type": "image",
+			"url": "assets/pen_btn.png"
+		},
+		{
+			"name": "home_btn_png",
+			"type": "image",
+			"url": "assets/home_btn.png"
+		},
+		{
+			"name": "bichu_png",
+			"type": "image",
+			"url": "assets/bichu.png"
+		},
+		{
+			"name": "bichuk_png",
+			"type": "image",
+			"url": "assets/bichuk.png"
+		},
+		{
+			"name": "run_jt_png",
+			"type": "image",
+			"url": "assets/run_jt.png"
+		},
+		{
+			"name": "apple_c3_png",
+			"type": "image",
+			"url": "assets/apple_c3.png"
+		},
+		{
+			"name": "apple_line2_png",
+			"type": "image",
+			"url": "assets/apple_line2.png"
+		},
+		{
+			"name": "apple_line1_png",
+			"type": "image",
+			"url": "assets/apple_line1.png"
+		},
+		{
+			"name": "apple_line3_png",
+			"type": "image",
+			"url": "assets/apple_line3.png"
+		},
+		{
+			"name": "choose_bg_png",
+			"type": "image",
+			"url": "assets/choose_bg.png"
+		},
+		{
+			"name": "f_fish_png",
+			"type": "image",
+			"url": "assets/f_fish.png"
+		},
+		{
+			"name": "f_fruit_png",
+			"type": "image",
+			"url": "assets/f_fruit.png"
+		},
+		{
+			"name": "f_car_png",
+			"type": "image",
+			"url": "assets/f_car.png"
+		},
+		{
+			"name": "f_other_png",
+			"type": "image",
+			"url": "assets/f_other.png"
+		},
+		{
+			"name": "choose_tapbg_png",
+			"type": "image",
+			"url": "assets/choose_tapbg.png"
+		},
+		{
+			"name": "choose_tapbg2_png",
+			"type": "image",
+			"url": "assets/choose_tapbg2.png"
+		},
+		{
+			"name": "boluo_c3_png",
+			"type": "image",
+			"url": "assets/boluo_c3.png"
+		},
+		{
+			"name": "boluo_c2_png",
+			"type": "image",
+			"url": "assets/boluo_c2.png"
+		},
+		{
+			"name": "boluo_c1_png",
+			"type": "image",
+			"url": "assets/boluo_c1.png"
+		},
+		{
+			"name": "boluo_line3_png",
+			"type": "image",
+			"url": "assets/boluo_line3.png"
+		},
+		{
+			"name": "boluo_line1_png",
+			"type": "image",
+			"url": "assets/boluo_line1.png"
+		},
+		{
+			"name": "boluo_line2_png",
+			"type": "image",
+			"url": "assets/boluo_line2.png"
+		},
+		{
+			"name": "apple_zhe1_png",
+			"type": "image",
+			"url": "assets/apple_zhe1.png"
+		},
+		{
+			"name": "apple_zhe2_png",
+			"type": "image",
+			"url": "assets/apple_zhe2.png"
+		},
+		{
+			"name": "apple_zhe3_png",
+			"type": "image",
+			"url": "assets/apple_zhe3.png"
+		},
+		{
+			"name": "boluo_zhe1_png",
+			"type": "image",
+			"url": "assets/boluo_zhe1.png"
+		},
+		{
+			"name": "boluo_zhe2_png",
+			"type": "image",
+			"url": "assets/boluo_zhe2.png"
+		},
+		{
+			"name": "boluo_zhe3_png",
+			"type": "image",
+			"url": "assets/boluo_zhe3.png"
+		},
+		{
+			"name": "choose1_2_png",
+			"type": "image",
+			"url": "assets/choose1_2.png"
+		},
+		{
+			"name": "chooseli_bg_png",
+			"type": "image",
+			"url": "assets/chooseli_bg.png"
+		},
+		{
+			"name": "f_shucai_png",
+			"type": "image",
+			"url": "assets/f_shucai.png"
 		}
 	]
 }

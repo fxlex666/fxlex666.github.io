@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="124.062" height="81.281" viewBox="0 0 124.062 81.281">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cf9;
+        stroke: #000;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="形状_2" data-name="形状 2" class="cls-1" d="M213,102c-0.784-1.175-3-73,67-80C280,22,213.784,103.175,213,102Zm-1-1s-2.191-82.807-54-78Z" transform="translate(-157.094 -21.375)"/>
+</svg>
