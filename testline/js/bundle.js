@@ -130,6 +130,7 @@
     onAwake() {
       Laya.Config.isAntialias = true;
       Laya.Physics.enable();
+      Laya.PhysicsDebugDraw.enable();
       this.initbg();
     }
     initbg() {
