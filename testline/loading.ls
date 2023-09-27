@@ -1,0 +1,1 @@
+{"_$ver":1,"_$id":"zgfdgp9y","_$runtime":"euVr-2wOQCaQViIZZBsPgQ","_$type":"Scene","left":0,"right":0,"top":0,"bottom":0,"name":"Scene2D","_$child":[{"_$id":"4y15vsec","_$type":"Text","name":"Text","y":650,"width":750,"height":74,"text":"加载中...","fontSize":40,"color":"#FFFFFF","align":"center","leading":2}]}
